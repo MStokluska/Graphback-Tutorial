@@ -189,7 +189,7 @@ export const userByName = {
   }
 }
 ```
-Resolver looks different then the ones we did in previous tutorials as it is written in TypeScript and uses knex to communicate with a database! 
+Resolver looks different then the ones we did in previous tutorials as it is written in TypeScript and uses knex to communicate with a database, but the idea is generally the same as in previous GraphQL tutorial.
 
 - Next, we need to repeat our 3-step process:
 ```sh
