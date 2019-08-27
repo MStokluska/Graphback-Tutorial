@@ -3,7 +3,7 @@
 # <center>Graphback</center>
 ----
 
-Last technology that had changed the way I see software development is Graphback, a CLI tool that can help build an entire GraphQL server and a client within seconds! It will generate schema and resolvers along with generating a database structure. Graphback addresses the difficulty in configuring a GraphQL server from scratch, and I know that our GraphQL server wasn't particularly difficult to set, but imagine how much work we would have if only we had more entities in our server! All graphback needs from you is your schema and it will do everything else for you. However, there's a little bit more that you need to know in order to use full graphback potential. 
+Last technology that had changed the way I see software development is Graphback, a CLI tool that can help build an entire GraphQL server and a client within seconds! It is an open source project that is still in development but it already makes wonders! It will generate schema and resolvers along with generating a database structure. Graphback addresses the difficulty in configuring a GraphQL server from scratch, and I know that our GraphQL server wasn't particularly difficult to set, but imagine how much work we would have if only we had more entities in our server! All graphback needs from you is your schema and it will do everything else for you. However, there's a little bit more that you need to know in order to use full graphback potential. 
 
 ## Requirements
 
