@@ -87,7 +87,7 @@ compiles TypeScript code into JavaScript.
 ```sh
 $ npm run start
 ```
-And our server is ready at [localhost:4000/graphql](http://localhost:4000/graphql)! From now on you got access to all of the generated resolvers.
+And our server is ready at [localhost:4000/graphql](http://localhost:4000/graphql)! From now on you got access to all of the generated resolvers.  You can view all available queries and mutation in the playground by clicking "Schema" sidebar on the right-hand side of the playground!
 
 - Graphback also allows for the use of so-called "Directives" which are extensions that can be attached to types and can affect the execution of a query. Let's re-construct our GraphQL server so that we can delete `Task`, but we can not delete `User`. To do that just add `@delete` to our `Task` type in `model/Default.graphql`:
 ```
