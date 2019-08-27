@@ -3,7 +3,16 @@
 # <center>Graphback</center>
 ----
 
-Last technology that had changed the way I see software development is Graphback, a CLI tool that can help build an entire GraphQL server and a client within seconds! It is an open source project that is still in development but it already makes wonders! It will generate schema and resolvers along with generating a database structure. Graphback addresses the difficulty in configuring a GraphQL server from scratch, and I know that our GraphQL server wasn't particularly difficult to set, but imagine how much work we would have if only we had more entities in our server! All graphback needs from you is your schema and it will do everything else for you. However, there's a little bit more that you need to know in order to use full graphback potential. 
+Building software can be sometimes overwhelming. As junior developers we are often looking for sample application
+that can guide us thru complex server and client architectures. However as junior dev we are often facing problems
+of templates being to complex or to simple making learning process more convoluted. 
+As software enginner I always wanted to learn more by building things, while having some form of standard I can base on 
+when building end to end solutions.
+
+In this blog post I want to present technology that changed my perception of software development.  
+Graphback in an CLI tool that can help build an entire GraphQL server and a client within seconds! It is an open source project that is currently being available as beta with lots of amaizing features to come! 
+
+Graphback will generate schema and resolvers along with generating a database structure. Graphback addresses the difficulty of configuring a GraphQL server from scratch, and I know that our GraphQL server wasn't particularly difficult to set, but imagine how much work we would have if only we had more types in our server! All graphback needs from you is your schema and it will do everything else for you. However, there's a little bit more that you need to know in order to use full graphback potential. 
 
 ## Requirements
 
@@ -14,11 +23,11 @@ We are not going to go deep in everything that Graphback has to offer but it wou
 - [TypeScript](https://www.typescriptlang.org/)
 - [Knex](http://knexjs.org/)
 
-However, if you only would like to see how easy it can be to spoon up a GraphQL server without any extras. I will explain everything you need to know in this tutorial.
+However, if you only would like to see how easy it can be to create a GraphQL server, I will explain everything you need to know in this tutorial.
 
 ## Let's start!
 
-- Our very first step is going to be installing Docker. Just follow the steps from [here](https://runnable.com/docker/getting-started/). To give you a brief on Docker, it is a platform that allows building containers that can contain libraries that are required for an application to start. For example, we are going to use Docker as our Postgre SQL provider. Without Docker, you would need to install entire Postgre SQL server on your local machine and then set it up. With docker, all you do is downloading an image of ready to go, out of the box - Postgres!
+- Our very first step is going to be installing Docker. Just follow the steps from [here](https://runnable.com/docker/getting-started/). To give you a brief on Docker, it is a platform that allows building containers that can contain libraries that are required for an application to start. For example, we are going to use Docker as our PostgreSQL provider. Without Docker, you would need to install entire Postgre SQL server on your local machine and then set it up. With docker, all you do is downloading an image of ready to go, out of the box - Postgres!
 
 - Once done, to double-check if your docker was installed correctly type:
 ```sh
@@ -38,7 +47,7 @@ Where YOUR_PROJECT_NAME is your own name of the project.
 - "No" for example model and PostgreSQL for your database.
 - Once it's generated, navigate to your newly created project. It is going to be right in your `graphback` folder.
 
-- There's a lot of files that might not make any sense to you. But don't be worried, you don't need to know what most of them is for during the tutorial. In new folder navigate to `src/resolvers/`, there should be only one file here called `index.ts` and as you can see in this file, there are no resolvers generated just yet.
+- In new folder navigate to `src/resolvers/`, there should be only one file here called `index.ts` and as you can see in this file, there are no resolvers generated just yet.
 - Now navigate to `model/Default.graphql`, delete what's in there and paste our own types that we are well used to:
 ```
 type User {
@@ -63,7 +72,7 @@ $ graphback generate
 ```
 - Next, open your `./src/resolvers/generated/` and witness the power of Graphback!
 
-Open your `task.ts` and `user.ts` and look through all the hard work Graphback did for you!!! I know that the code behind the resolvers might not be understandable to you at the moment but I'm sure with a bit of hard work you will be able to write your resolvers the very same way!
+Open your `task.ts` and `user.ts` and look through all the hard work Graphback did for you! I know that the code behind the resolvers might not be understandable to you at the moment but I'm sure with a bit of hard work you will be able to write your resolvers the very same way!
 
 - Our next step is to test it out! In your terminal type:
 ```sh
@@ -224,7 +233,8 @@ Our database consists of a single user and a single task from now on!
 
 ## Summary
 
-Graphback offers a lot of features out of the box. This easy to use, amazing, technology - helped me realize how powerful and life-changing software development can be. Writing an entire GraphQL server line by line which can be very time consuming, setting up subscriptions and using directives can take days or weeks to do! While Graphback can generate it for you within seconds! Imagine how powerful this tool can be in the world of Agile where developers are doing their best to provide a working prototype of an application as soon as possible, imagine the time saved that will come from typing `graphback generate` after populating your `typeDefs` instead of all the planning, coding and testing your back end.
+Graphback offers a lot of features out of the box. This easy to use, amazing, technology - helped me realize how powerful and life-changing software development can be. Writing an entire GraphQL server line by line which can be very time consuming, setting up subscriptions and using directives can take days or weeks to do! While Graphback can generate it for you within seconds! Imagine how powerful this tool can be in the world where developers are doing their best to provide a working prototype of an application as soon as possible, imagine the time saved that will come from typing `graphback generate` after populating your `typeDefs` instead of all the planning, coding and testing your back end. You will still need to 
+implement your custom business logic yourself, but the core functionality will be provided saving you time from writing a lots of boilerplate.
 
 I hope that you have found this series of tutorials interesting and learned a few things about REST, GraphQL and Graphback. When I was exposed to these technologies for the first time, I had to rethink what I'm doing and reevaluate what I want to learn next in my journey to become a software developer!
 
